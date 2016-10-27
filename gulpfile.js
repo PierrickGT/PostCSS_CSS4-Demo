@@ -85,7 +85,7 @@ gulp.task('css', function() {
 gulp.task('css:deploy', function() {
   var processors = [cssImport, postCssFunctions, cssVerticalRhythm, cssnext, assets({
     basePath: 'public/',
-    baseUrl: '', // Write your Github URL here
+    baseUrl: 'https://github.com/PierrickGT/PostCSS_CSS4-Demo', // Write your Github URL here
     loadPaths: ['assets/images/**']
   }), cssnano, browserReporter, reporter];
   return gulp.src('./source/css/style.css')
@@ -167,7 +167,7 @@ gulp.task('html', function(){
 gulp.task('html:deploy', function(){
   return gulp.src('./source/*.html')
   .pipe(include())
-  .pipe($.replace('href="/', 'href="/name-of-your-repository/')) // Write your Github repository name here
+  .pipe($.replace('href="/', 'href="/PostCSS_CSS4-Demo/')) // Write your Github repository name here
   .pipe(gulp.dest('./public'))
 });
 
