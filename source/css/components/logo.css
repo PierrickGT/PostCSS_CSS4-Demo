@@ -1,0 +1,10 @@
+.c-logo {
+  text-align: center;
+  font-size: em(24)rem;
+  padding-top: vr(2)rem;
+  font-family: 'Montserrat-Bold';
+
+  & span {
+    color: var(--red);
+  }
+}

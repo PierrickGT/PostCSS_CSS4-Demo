@@ -1,0 +1,21 @@
+.c-bar--experience {
+  width: em(100)rem;
+  height: em(10)rem;
+  border-radius: em(25)rem;;
+  background-color: white;
+  margin-bottom: vr(.25)rem;
+
+  & span {
+    display: block;
+    width: 100%;
+    height: em(10)rem;
+    border-radius: em(25)rem;
+    background: repeating-linear-gradient(
+    135deg,
+    var(--red),
+    var(--red) 65%,
+    white 65%,
+    white 100%
+    );
+  }
+}

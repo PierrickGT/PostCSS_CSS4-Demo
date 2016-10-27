@@ -1,0 +1,19 @@
+:root {
+  --black: #222222;
+  --red: #de1212;
+  --white: #f3f3f3;
+
+  /*--menu: color(var(--white) tint(30%));*/
+
+  --menu: color(
+    var(--white)
+    tint(30%)
+    lightness(+ 1%)
+    lightness(- 1%)
+    hue(+ 60deg)
+    hue(+ 60deg)
+    hue(- 120deg)
+    saturation(100%)
+    saturation(- 100%)
+  );
+}

@@ -1,0 +1,25 @@
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+@custom-selector :--links a;
+
+:--headings {
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  letter-spacing: .05rem;
+  font-family: 'Montserrat-SemiBold';
+}
+
+.c-title {
+  padding-bottom: vr(2)rem;
+}
+
+.c-subtitle {
+  font-size: em(16)rem;
+  line-height: 1.25rem;
+  font-family: 'Montserrat-Regular';
+}
+
+.c-subtitle--red {
+  color: var(--red);
+  font-family: 'Montserrat-Light';
+}

@@ -1,0 +1,77 @@
+.c-show {
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: vr(5)rem;
+}
+
+.c-show__experience {
+  margin: 0;
+  padding-bottom: vr(.5)rem;
+  font-size: em(14)rem;
+  color: var(--red);
+  font-family: 'Montserrat-Light';
+}
+
+.c-show__title {
+  padding-bottom: vr(.25)rem;
+  font-size: em(48)rem;
+  color: var(--white);
+  letter-spacing: .25rem;
+
+}
+
+.c-show__seasons {
+  padding-bottom: vr(.5)rem;
+  font-size: em(16)rem;
+  color: var(--white);
+  letter-spacing: .1rem;
+  font-family: 'Montserrat-SemiBold';
+}
+
+.c-show__stars {
+  padding-right: vr(.5)rem;
+}
+
+.c-show__star {
+  width: em(16)rem;
+
+  &:not(:last-child) {
+    margin-right: em(3)rem;
+  }
+}
+
+.c-show__rate {
+  padding-right: vr(1)rem;
+  color: var(--white);
+  font-family: 'Montserrat-SemiBold';
+
+  & .h-big {
+    font-size: em(24)rem;
+  }
+}
+
+.c-show__type {
+  display: inline-block;
+  color: var(--white);
+  font-size: em(16)rem;
+  letter-spacing: .1rem;
+  font-family: 'Montserrat-SemiBold';
+  filter: drop-shadow(1px 1px 0 var(--black));
+}
+
+.c-show__description {
+  padding: vr(1)rem 0;
+  color: var(--white);
+  font-size: em(14)rem;
+  letter-spacing: .1rem;
+  line-height: 1.15rem;
+  max-width: em(450)rem;
+  filter: drop-shadow(1px 1px 0 var(--black));
+}
+
+/* Responsive */
+@media (--iphone-six-plus) {
+  .c-show {
+    padding: 0 vr(1.5)rem;
+  }
+}

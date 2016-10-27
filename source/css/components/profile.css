@@ -1,0 +1,14 @@
+/* User Profile */
+.c-profile {
+  display: table;
+  margin: 0 auto;
+  padding-bottom: vr(4)rem;
+}
+
+.c-profile__img {
+  display: table-cell;
+  width: em(70)rem;
+  height: em(70)rem;
+  border-radius: 50%;
+  margin-right: vr(1)rem;
+}

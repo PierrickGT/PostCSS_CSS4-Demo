@@ -1,0 +1,70 @@
+/* Menu */
+.l-menu {
+  flex: 0 0 20%;
+
+  & .l-menu__wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 80%;
+  }
+}
+
+/* Discover */
+.l-discover {
+  flex: 2;
+  flex-direction: column;
+  padding: vr(3)rem;
+}
+
+/* Show */
+.l-show {
+  flex: 2;
+  flex-direction: column;
+  height: 100vh;
+
+  &.l-show--game-of-thrones {
+    position: relative;
+
+    &:after {
+      content: '';
+      background: resolve('background/game-of-thrones.jpg') no-repeat;
+      background-size: cover;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      filter: contrast(75%);
+    }
+
+  }
+
+  & .l-show__wrapper {
+    display: table;
+    height: 100%;
+  }
+}
+
+/* Friends */
+.l-friends {
+  flex: 0 0 15%;
+  background-color: var(--menu);
+}
+
+/* Responsive */
+@media (--iphone-six-plus) {
+  .l-menu {
+    display: none;
+  }
+
+  .l-show {
+    &.l-show--game-of-thrones {
+      &:after {
+        background-position: em(-270)rem;
+      }
+    }
+  }
+}

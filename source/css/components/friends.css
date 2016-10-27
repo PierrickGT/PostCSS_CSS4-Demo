@@ -1,0 +1,25 @@
+/* Friends */
+.c-friends {
+  position: fixed;
+  top: vr(3)rem;
+  left: 85%;
+  bottom: 0;
+  right: 0;
+
+  &.c-friends--white {
+    & a, & :--headings {
+      color: var(--white);
+    }
+  }
+
+  & .c-subtitle {
+    text-align: center;
+  }
+}
+
+/* Responsive */
+@media (--iphone-six-plus) {
+  .c-friends {
+    display: none;
+  }
+}

@@ -1,0 +1,19 @@
+/* Breakpoints based on Google Material */
+/* https://material.google.com/layout/responsive-ui.html#responsive-ui-breakpoints */
+
+/* Tablets */
+:root {
+  --large-window: em(1152)em;
+  --medium-window: em(1024)em;
+  --small-window: em(960)em;
+  --large-tablet: em(840)em;
+  --medium-tablet: em(720)em;
+  --small-tablet: em(600)em;
+  --xsmall-window: em(480)em;
+
+  /* Phones */
+  --iphone-five: em(320)em;
+  --iphone-six: em(375)em;
+}
+
+@custom-media --iphone-six-plus (width <= em(414)em);

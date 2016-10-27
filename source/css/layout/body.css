@@ -1,0 +1,7 @@
+body {
+  display: flex;
+  line-height: 1;
+  color: var(--black);
+  background-color: var(--white);
+  font-family: 'Montserrat-Regular';
+}

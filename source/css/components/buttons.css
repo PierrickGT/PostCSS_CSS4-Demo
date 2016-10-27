@@ -1,0 +1,71 @@
+:root {
+  --white-button: {
+    color: var(--white);
+    border: em(1)rem solid var(--white);
+    filter: drop-shadow(1px 1px 0 var(--black));
+  };
+
+  --white-button-enter: {
+    color: var(--black);
+    border: em(1)rem solid var(--white);
+    background-color: var(--white);
+    filter: none;
+  };
+
+  --red-button: {
+    color: var(--red);
+    border: em(1)rem solid var(--red);
+  };
+
+  --red-button-enter: {
+    color: var(--white);
+    border: em(1)rem solid var(--red);
+    background-color: var(--red);
+  };
+}
+
+@custom-selector :--button button, .c-button;
+@custom-selector :--button-red .c-button--red;
+@custom-selector :--enter :hover, :focus;
+
+/* Default Button */
+:--button {
+  /* Resets */
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  box-sizing: content-box;
+
+  /* Style */
+  font-size: em(14)rem;
+  letter-spacing: .05rem;
+  border-radius: em(12)rem;
+  padding: em(10)rem em(20)rem;
+  @apply --white-button;
+
+  &:not(:last-child) {
+    margin-right: vr(1)rem;
+  }
+
+  &:--enter {
+    /* Resets */
+    outline: none;
+
+    /* Style */
+    @apply --white-button-enter;
+  }
+}
+
+/* Red Button */
+:--button-red {
+  @apply --red-button;
+
+  &:--enter {
+    @apply --red-button-enter;
+  }
+}
